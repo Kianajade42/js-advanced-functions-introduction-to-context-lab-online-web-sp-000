@@ -12,5 +12,5 @@ const createEmployeeRecords= function (employeeRowData){
   return employeeRowData.map(function(row){
     return createEmployeeRecord(row)
   })
-  
+
 }
