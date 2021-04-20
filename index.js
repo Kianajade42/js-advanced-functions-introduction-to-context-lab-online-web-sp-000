@@ -5,6 +5,6 @@ return { firstName: row[0],
   payPerHour: row[3],
   timeInEvent: [],
   timeOutEvent: []
-  
+
 }
 }
