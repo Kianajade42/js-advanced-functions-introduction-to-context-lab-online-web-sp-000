@@ -15,22 +15,28 @@ const createEmployeeRecords= function (employeeRowData){
 
 }
 
-let createTimeInEvent= function(employee,timeStamp){
-  let [date,hour]=timeStamp.split('')
-  employee.timeInEvents.push({
-    type:"TimeIn",
-    hour:parseInt(hour, 10),
-    date,
-  })
-  return employee
+let createTimeInEvent = function(employee, dateStamp){
+    let [date, hour] = dateStamp.split(' ')
+
+    employee.timeInEvents.push({
+        type: "TimeIn",
+        hour: parseInt(hour, 10),
+        date,
+    })
+
+    return employee
 }
 
-let createTimeOutEvent= function(employee,timestamp){
-  let [date,hour]=timestamp.split('')
-  employee.timeOutEvents.push({
-    type:"TimeOut",
-    hour:parseInt(hour, 10),
-    date,
-  })
-  return employee
+let createTimeOutEvent = function(employee, dateStamp){
+    let [date, hour] = dateStamp.split(' ')
+
+    employee.timeOutEvents.push({
+        type: "TimeOut",
+        hour: parseInt(hour, 10),
+        date,
+    })
+
+    return employee
 }
+
+
