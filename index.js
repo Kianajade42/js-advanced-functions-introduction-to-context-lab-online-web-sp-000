@@ -8,6 +8,9 @@ return { firstName: row[0],
 }
 }
 
-const createEmployeeRecords= function (){
+const createEmployeeRecords= function (employeeRowData){
+  return employeeRowData.map(function(row){
+    return createEmployeeRecord(row)
+  })
   
 }
