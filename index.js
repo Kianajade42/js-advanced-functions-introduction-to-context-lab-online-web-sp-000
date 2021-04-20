@@ -1,3 +1,3 @@
-const createEmployeeRecord(){
+function createEmployeeRecord(){
   
 }
