@@ -15,8 +15,8 @@ const createEmployeeRecords= function (employeeRowData){
 
 }
 
-let createTimeInEvent= function(employee,timestamp){
-  let [date,hour]=timestamp.split('')
+let createTimeInEvent= function(employee,timeStamp){
+  let [date,hour]=timeStamp.split('')
   employee.timeInEvents.push({
     type:"TimeIn",
     hour:parseInt(hour, 10),
