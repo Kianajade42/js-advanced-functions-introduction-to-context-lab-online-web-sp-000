@@ -7,3 +7,7 @@ return { firstName: row[0],
   timeOutEvents: []
 }
 }
+
+const createEmployeeRecords= function (){
+  
+}
