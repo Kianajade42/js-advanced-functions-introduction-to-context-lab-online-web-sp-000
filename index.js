@@ -24,3 +24,13 @@ const createTimeInEvent= function(employee,timestamp){
   })
   return employee
 }
+
+const createTimeOutEvent= function(employee,timestamp){
+  let [date,hour]=timestamp.split('')
+  employee.timeOutEvents.push({
+    type:"TimeOut",
+    hour:parseInt(hour, 10),
+    date,
+  })
+  return employee
+}
